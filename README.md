@@ -12,6 +12,6 @@ FOR THE TRAVELPALS API: <br>
 ----------------------- <br>
 TravelPalsAPI -> Sources/App (All files and folders within Sources/App)
 
-FOR FACE VERIFICATION CODE: <br>
----------------------------
-fv.py
+FOR FACE VERIFICATION CODE:<br>
+---------------------------<br>
+fv.py<br>
