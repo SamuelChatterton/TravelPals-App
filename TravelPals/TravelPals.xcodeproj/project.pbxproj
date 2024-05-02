@@ -1,0 +1,733 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		360DE3532BC70EAA00430C84 /* TravelPalsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 360DE3522BC70EAA00430C84 /* TravelPalsApp.swift */; };
+		360DE3572BC70EAD00430C84 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 360DE3562BC70EAD00430C84 /* Assets.xcassets */; };
+		360DE35A2BC70EAD00430C84 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 360DE3592BC70EAD00430C84 /* Preview Assets.xcassets */; };
+		360DE3642BC70EAD00430C84 /* TravelPalsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 360DE3632BC70EAD00430C84 /* TravelPalsTests.swift */; };
+		360DE36E2BC70EAD00430C84 /* TravelPalsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 360DE36D2BC70EAD00430C84 /* TravelPalsUITests.swift */; };
+		360DE3702BC70EAD00430C84 /* TravelPalsUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 360DE36F2BC70EAD00430C84 /* TravelPalsUITestsLaunchTests.swift */; };
+		360DE3812BC70F8800430C84 /* HttpClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 360DE3802BC70F8800430C84 /* HttpClient.swift */; };
+		360DE3832BC70FA900430C84 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 360DE3822BC70FA900430C84 /* Constants.swift */; };
+		360DE3852BC70FD700430C84 /* ModelType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 360DE3842BC70FD700430C84 /* ModelType.swift */; };
+		360DE3892BC7103300430C84 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 360DE3882BC7103300430C84 /* User.swift */; };
+		360DE38B2BC7104000430C84 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 360DE38A2BC7104000430C84 /* Post.swift */; };
+		360DE38D2BC7136F00430C84 /* UserViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 360DE38C2BC7136F00430C84 /* UserViewModel.swift */; };
+		360DE38F2BC7138300430C84 /* AddUpdateUserViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 360DE38E2BC7138300430C84 /* AddUpdateUserViewModel.swift */; };
+		360DE3912BC7139400430C84 /* PostViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 360DE3902BC7139400430C84 /* PostViewModel.swift */; };
+		360DE3932BC713A500430C84 /* AddUpdatePostViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 360DE3922BC713A500430C84 /* AddUpdatePostViewModel.swift */; };
+		360DE3952BC713B400430C84 /* ShareViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 360DE3942BC713B400430C84 /* ShareViewModel.swift */; };
+		360DE3972BC7160400430C84 /* OpenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 360DE3962BC7160400430C84 /* OpenView.swift */; };
+		360DE3992BC7169200430C84 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 360DE3982BC7169200430C84 /* HomeView.swift */; };
+		360DE39B2BC7174E00430C84 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 360DE39A2BC7174E00430C84 /* MainView.swift */; };
+		360DE39D2BC7182F00430C84 /* LikedPosts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 360DE39C2BC7182F00430C84 /* LikedPosts.swift */; };
+		360DE39F2BC7187800430C84 /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 360DE39E2BC7187800430C84 /* SearchView.swift */; };
+		360DE3A12BC718AB00430C84 /* tripSearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 360DE3A02BC718AB00430C84 /* tripSearchView.swift */; };
+		360DE3A32BC718F400430C84 /* NotifsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 360DE3A22BC718F400430C84 /* NotifsView.swift */; };
+		360DE3A52BC7192300430C84 /* CreatePost.swift in Sources */ = {isa = PBXBuildFile; fileRef = 360DE3A42BC7192300430C84 /* CreatePost.swift */; };
+		360DE3A72BC71A6E00430C84 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 360DE3A62BC71A6E00430C84 /* ProfileView.swift */; };
+		360DE3A92BC71B3C00430C84 /* RegLogView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 360DE3A82BC71B3C00430C84 /* RegLogView.swift */; };
+		360DE3AB2BC71B6D00430C84 /* Login.swift in Sources */ = {isa = PBXBuildFile; fileRef = 360DE3AA2BC71B6D00430C84 /* Login.swift */; };
+		360DE3AD2BC71BE400430C84 /* RegOneView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 360DE3AC2BC71BE400430C84 /* RegOneView.swift */; };
+		360DE3AF2BC71BFA00430C84 /* RegTwoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 360DE3AE2BC71BFA00430C84 /* RegTwoView.swift */; };
+		360DE3B12BC71C1000430C84 /* RegThreeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 360DE3B02BC71C1000430C84 /* RegThreeView.swift */; };
+		360DE3B32BC71C2100430C84 /* RegFourView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 360DE3B22BC71C2100430C84 /* RegFourView.swift */; };
+		360DE3B52BC71C3500430C84 /* RegFiveView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 360DE3B42BC71C3500430C84 /* RegFiveView.swift */; };
+		360DE3B72BC71C4700430C84 /* RegSevenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 360DE3B62BC71C4700430C84 /* RegSevenView.swift */; };
+		360DE3B92BC71D5100430C84 /* TripView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 360DE3B82BC71D5100430C84 /* TripView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		360DE3602BC70EAD00430C84 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 360DE3472BC70EAA00430C84 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 360DE34E2BC70EAA00430C84;
+			remoteInfo = TravelPals;
+		};
+		360DE36A2BC70EAD00430C84 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 360DE3472BC70EAA00430C84 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 360DE34E2BC70EAA00430C84;
+			remoteInfo = TravelPals;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		360DE34F2BC70EAA00430C84 /* TravelPals.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TravelPals.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		360DE3522BC70EAA00430C84 /* TravelPalsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TravelPalsApp.swift; sourceTree = "<group>"; };
+		360DE3562BC70EAD00430C84 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		360DE3592BC70EAD00430C84 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		360DE35F2BC70EAD00430C84 /* TravelPalsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TravelPalsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		360DE3632BC70EAD00430C84 /* TravelPalsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TravelPalsTests.swift; sourceTree = "<group>"; };
+		360DE3692BC70EAD00430C84 /* TravelPalsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TravelPalsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		360DE36D2BC70EAD00430C84 /* TravelPalsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TravelPalsUITests.swift; sourceTree = "<group>"; };
+		360DE36F2BC70EAD00430C84 /* TravelPalsUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TravelPalsUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		360DE3802BC70F8800430C84 /* HttpClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpClient.swift; sourceTree = "<group>"; };
+		360DE3822BC70FA900430C84 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		360DE3842BC70FD700430C84 /* ModelType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelType.swift; sourceTree = "<group>"; };
+		360DE3882BC7103300430C84 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		360DE38A2BC7104000430C84 /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
+		360DE38C2BC7136F00430C84 /* UserViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewModel.swift; sourceTree = "<group>"; };
+		360DE38E2BC7138300430C84 /* AddUpdateUserViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddUpdateUserViewModel.swift; sourceTree = "<group>"; };
+		360DE3902BC7139400430C84 /* PostViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostViewModel.swift; sourceTree = "<group>"; };
+		360DE3922BC713A500430C84 /* AddUpdatePostViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddUpdatePostViewModel.swift; sourceTree = "<group>"; };
+		360DE3942BC713B400430C84 /* ShareViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareViewModel.swift; sourceTree = "<group>"; };
+		360DE3962BC7160400430C84 /* OpenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenView.swift; sourceTree = "<group>"; };
+		360DE3982BC7169200430C84 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		360DE39A2BC7174E00430C84 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		360DE39C2BC7182F00430C84 /* LikedPosts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LikedPosts.swift; sourceTree = "<group>"; };
+		360DE39E2BC7187800430C84 /* SearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
+		360DE3A02BC718AB00430C84 /* tripSearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tripSearchView.swift; sourceTree = "<group>"; };
+		360DE3A22BC718F400430C84 /* NotifsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotifsView.swift; sourceTree = "<group>"; };
+		360DE3A42BC7192300430C84 /* CreatePost.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreatePost.swift; sourceTree = "<group>"; };
+		360DE3A62BC71A6E00430C84 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		360DE3A82BC71B3C00430C84 /* RegLogView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegLogView.swift; sourceTree = "<group>"; };
+		360DE3AA2BC71B6D00430C84 /* Login.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Login.swift; sourceTree = "<group>"; };
+		360DE3AC2BC71BE400430C84 /* RegOneView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegOneView.swift; sourceTree = "<group>"; };
+		360DE3AE2BC71BFA00430C84 /* RegTwoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegTwoView.swift; sourceTree = "<group>"; };
+		360DE3B02BC71C1000430C84 /* RegThreeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegThreeView.swift; sourceTree = "<group>"; };
+		360DE3B22BC71C2100430C84 /* RegFourView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegFourView.swift; sourceTree = "<group>"; };
+		360DE3B42BC71C3500430C84 /* RegFiveView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegFiveView.swift; sourceTree = "<group>"; };
+		360DE3B62BC71C4700430C84 /* RegSevenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegSevenView.swift; sourceTree = "<group>"; };
+		360DE3B82BC71D5100430C84 /* TripView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		360DE34C2BC70EAA00430C84 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		360DE35C2BC70EAD00430C84 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		360DE3662BC70EAD00430C84 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		360DE3462BC70EAA00430C84 = {
+			isa = PBXGroup;
+			children = (
+				360DE3512BC70EAA00430C84 /* TravelPals */,
+				360DE3622BC70EAD00430C84 /* TravelPalsTests */,
+				360DE36C2BC70EAD00430C84 /* TravelPalsUITests */,
+				360DE3502BC70EAA00430C84 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		360DE3502BC70EAA00430C84 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				360DE34F2BC70EAA00430C84 /* TravelPals.app */,
+				360DE35F2BC70EAD00430C84 /* TravelPalsTests.xctest */,
+				360DE3692BC70EAD00430C84 /* TravelPalsUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		360DE3512BC70EAA00430C84 /* TravelPals */ = {
+			isa = PBXGroup;
+			children = (
+				360DE3522BC70EAA00430C84 /* TravelPalsApp.swift */,
+				360DE37C2BC70EDC00430C84 /* Models */,
+				360DE37D2BC70EEC00430C84 /* View Models */,
+				360DE37E2BC70F0000430C84 /* Views */,
+				360DE37F2BC70F1100430C84 /* Utilities */,
+				360DE3562BC70EAD00430C84 /* Assets.xcassets */,
+				360DE3582BC70EAD00430C84 /* Preview Content */,
+			);
+			path = TravelPals;
+			sourceTree = "<group>";
+		};
+		360DE3582BC70EAD00430C84 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				360DE3592BC70EAD00430C84 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		360DE3622BC70EAD00430C84 /* TravelPalsTests */ = {
+			isa = PBXGroup;
+			children = (
+				360DE3632BC70EAD00430C84 /* TravelPalsTests.swift */,
+			);
+			path = TravelPalsTests;
+			sourceTree = "<group>";
+		};
+		360DE36C2BC70EAD00430C84 /* TravelPalsUITests */ = {
+			isa = PBXGroup;
+			children = (
+				360DE36D2BC70EAD00430C84 /* TravelPalsUITests.swift */,
+				360DE36F2BC70EAD00430C84 /* TravelPalsUITestsLaunchTests.swift */,
+			);
+			path = TravelPalsUITests;
+			sourceTree = "<group>";
+		};
+		360DE37C2BC70EDC00430C84 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				360DE3882BC7103300430C84 /* User.swift */,
+				360DE38A2BC7104000430C84 /* Post.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		360DE37D2BC70EEC00430C84 /* View Models */ = {
+			isa = PBXGroup;
+			children = (
+				360DE38C2BC7136F00430C84 /* UserViewModel.swift */,
+				360DE38E2BC7138300430C84 /* AddUpdateUserViewModel.swift */,
+				360DE3902BC7139400430C84 /* PostViewModel.swift */,
+				360DE3922BC713A500430C84 /* AddUpdatePostViewModel.swift */,
+				360DE3942BC713B400430C84 /* ShareViewModel.swift */,
+			);
+			path = "View Models";
+			sourceTree = "<group>";
+		};
+		360DE37E2BC70F0000430C84 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				360DE3962BC7160400430C84 /* OpenView.swift */,
+				360DE3982BC7169200430C84 /* HomeView.swift */,
+				360DE39A2BC7174E00430C84 /* MainView.swift */,
+				360DE39C2BC7182F00430C84 /* LikedPosts.swift */,
+				360DE39E2BC7187800430C84 /* SearchView.swift */,
+				360DE3A02BC718AB00430C84 /* tripSearchView.swift */,
+				360DE3B82BC71D5100430C84 /* TripView.swift */,
+				360DE3A22BC718F400430C84 /* NotifsView.swift */,
+				360DE3A42BC7192300430C84 /* CreatePost.swift */,
+				360DE3A62BC71A6E00430C84 /* ProfileView.swift */,
+				360DE3A82BC71B3C00430C84 /* RegLogView.swift */,
+				360DE3AA2BC71B6D00430C84 /* Login.swift */,
+				360DE3AC2BC71BE400430C84 /* RegOneView.swift */,
+				360DE3AE2BC71BFA00430C84 /* RegTwoView.swift */,
+				360DE3B02BC71C1000430C84 /* RegThreeView.swift */,
+				360DE3B22BC71C2100430C84 /* RegFourView.swift */,
+				360DE3B42BC71C3500430C84 /* RegFiveView.swift */,
+				360DE3B62BC71C4700430C84 /* RegSevenView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		360DE37F2BC70F1100430C84 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				360DE3802BC70F8800430C84 /* HttpClient.swift */,
+				360DE3822BC70FA900430C84 /* Constants.swift */,
+				360DE3842BC70FD700430C84 /* ModelType.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		360DE34E2BC70EAA00430C84 /* TravelPals */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 360DE3732BC70EAD00430C84 /* Build configuration list for PBXNativeTarget "TravelPals" */;
+			buildPhases = (
+				360DE34B2BC70EAA00430C84 /* Sources */,
+				360DE34C2BC70EAA00430C84 /* Frameworks */,
+				360DE34D2BC70EAA00430C84 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TravelPals;
+			productName = TravelPals;
+			productReference = 360DE34F2BC70EAA00430C84 /* TravelPals.app */;
+			productType = "com.apple.product-type.application";
+		};
+		360DE35E2BC70EAD00430C84 /* TravelPalsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 360DE3762BC70EAD00430C84 /* Build configuration list for PBXNativeTarget "TravelPalsTests" */;
+			buildPhases = (
+				360DE35B2BC70EAD00430C84 /* Sources */,
+				360DE35C2BC70EAD00430C84 /* Frameworks */,
+				360DE35D2BC70EAD00430C84 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				360DE3612BC70EAD00430C84 /* PBXTargetDependency */,
+			);
+			name = TravelPalsTests;
+			productName = TravelPalsTests;
+			productReference = 360DE35F2BC70EAD00430C84 /* TravelPalsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		360DE3682BC70EAD00430C84 /* TravelPalsUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 360DE3792BC70EAD00430C84 /* Build configuration list for PBXNativeTarget "TravelPalsUITests" */;
+			buildPhases = (
+				360DE3652BC70EAD00430C84 /* Sources */,
+				360DE3662BC70EAD00430C84 /* Frameworks */,
+				360DE3672BC70EAD00430C84 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				360DE36B2BC70EAD00430C84 /* PBXTargetDependency */,
+			);
+			name = TravelPalsUITests;
+			productName = TravelPalsUITests;
+			productReference = 360DE3692BC70EAD00430C84 /* TravelPalsUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		360DE3472BC70EAA00430C84 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1520;
+				LastUpgradeCheck = 1520;
+				TargetAttributes = {
+					360DE34E2BC70EAA00430C84 = {
+						CreatedOnToolsVersion = 15.2;
+					};
+					360DE35E2BC70EAD00430C84 = {
+						CreatedOnToolsVersion = 15.2;
+						TestTargetID = 360DE34E2BC70EAA00430C84;
+					};
+					360DE3682BC70EAD00430C84 = {
+						CreatedOnToolsVersion = 15.2;
+						TestTargetID = 360DE34E2BC70EAA00430C84;
+					};
+				};
+			};
+			buildConfigurationList = 360DE34A2BC70EAA00430C84 /* Build configuration list for PBXProject "TravelPals" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 360DE3462BC70EAA00430C84;
+			productRefGroup = 360DE3502BC70EAA00430C84 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				360DE34E2BC70EAA00430C84 /* TravelPals */,
+				360DE35E2BC70EAD00430C84 /* TravelPalsTests */,
+				360DE3682BC70EAD00430C84 /* TravelPalsUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		360DE34D2BC70EAA00430C84 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				360DE35A2BC70EAD00430C84 /* Preview Assets.xcassets in Resources */,
+				360DE3572BC70EAD00430C84 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		360DE35D2BC70EAD00430C84 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		360DE3672BC70EAD00430C84 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		360DE34B2BC70EAA00430C84 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				360DE3A52BC7192300430C84 /* CreatePost.swift in Sources */,
+				360DE3972BC7160400430C84 /* OpenView.swift in Sources */,
+				360DE3A92BC71B3C00430C84 /* RegLogView.swift in Sources */,
+				360DE3B92BC71D5100430C84 /* TripView.swift in Sources */,
+				360DE39D2BC7182F00430C84 /* LikedPosts.swift in Sources */,
+				360DE3852BC70FD700430C84 /* ModelType.swift in Sources */,
+				360DE3992BC7169200430C84 /* HomeView.swift in Sources */,
+				360DE3812BC70F8800430C84 /* HttpClient.swift in Sources */,
+				360DE38B2BC7104000430C84 /* Post.swift in Sources */,
+				360DE38F2BC7138300430C84 /* AddUpdateUserViewModel.swift in Sources */,
+				360DE3A12BC718AB00430C84 /* tripSearchView.swift in Sources */,
+				360DE3932BC713A500430C84 /* AddUpdatePostViewModel.swift in Sources */,
+				360DE3B12BC71C1000430C84 /* RegThreeView.swift in Sources */,
+				360DE3B72BC71C4700430C84 /* RegSevenView.swift in Sources */,
+				360DE3532BC70EAA00430C84 /* TravelPalsApp.swift in Sources */,
+				360DE39F2BC7187800430C84 /* SearchView.swift in Sources */,
+				360DE39B2BC7174E00430C84 /* MainView.swift in Sources */,
+				360DE3B52BC71C3500430C84 /* RegFiveView.swift in Sources */,
+				360DE3AB2BC71B6D00430C84 /* Login.swift in Sources */,
+				360DE3AF2BC71BFA00430C84 /* RegTwoView.swift in Sources */,
+				360DE3832BC70FA900430C84 /* Constants.swift in Sources */,
+				360DE3912BC7139400430C84 /* PostViewModel.swift in Sources */,
+				360DE3952BC713B400430C84 /* ShareViewModel.swift in Sources */,
+				360DE3B32BC71C2100430C84 /* RegFourView.swift in Sources */,
+				360DE3A32BC718F400430C84 /* NotifsView.swift in Sources */,
+				360DE38D2BC7136F00430C84 /* UserViewModel.swift in Sources */,
+				360DE3A72BC71A6E00430C84 /* ProfileView.swift in Sources */,
+				360DE3AD2BC71BE400430C84 /* RegOneView.swift in Sources */,
+				360DE3892BC7103300430C84 /* User.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		360DE35B2BC70EAD00430C84 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				360DE3642BC70EAD00430C84 /* TravelPalsTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		360DE3652BC70EAD00430C84 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				360DE3702BC70EAD00430C84 /* TravelPalsUITestsLaunchTests.swift in Sources */,
+				360DE36E2BC70EAD00430C84 /* TravelPalsUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		360DE3612BC70EAD00430C84 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 360DE34E2BC70EAA00430C84 /* TravelPals */;
+			targetProxy = 360DE3602BC70EAD00430C84 /* PBXContainerItemProxy */;
+		};
+		360DE36B2BC70EAD00430C84 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 360DE34E2BC70EAA00430C84 /* TravelPals */;
+			targetProxy = 360DE36A2BC70EAD00430C84 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		360DE3712BC70EAD00430C84 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		360DE3722BC70EAD00430C84 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		360DE3742BC70EAD00430C84 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"TravelPals/Preview Content\"";
+				DEVELOPMENT_TEAM = UQUTC4CC77;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Dis.TravelPals;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		360DE3752BC70EAD00430C84 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"TravelPals/Preview Content\"";
+				DEVELOPMENT_TEAM = UQUTC4CC77;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Dis.TravelPals;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		360DE3772BC70EAD00430C84 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = UQUTC4CC77;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Dis.TravelPalsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TravelPals.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/TravelPals";
+			};
+			name = Debug;
+		};
+		360DE3782BC70EAD00430C84 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = UQUTC4CC77;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Dis.TravelPalsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TravelPals.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/TravelPals";
+			};
+			name = Release;
+		};
+		360DE37A2BC70EAD00430C84 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = UQUTC4CC77;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Dis.TravelPalsUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = TravelPals;
+			};
+			name = Debug;
+		};
+		360DE37B2BC70EAD00430C84 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = UQUTC4CC77;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Dis.TravelPalsUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = TravelPals;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		360DE34A2BC70EAA00430C84 /* Build configuration list for PBXProject "TravelPals" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				360DE3712BC70EAD00430C84 /* Debug */,
+				360DE3722BC70EAD00430C84 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		360DE3732BC70EAD00430C84 /* Build configuration list for PBXNativeTarget "TravelPals" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				360DE3742BC70EAD00430C84 /* Debug */,
+				360DE3752BC70EAD00430C84 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		360DE3762BC70EAD00430C84 /* Build configuration list for PBXNativeTarget "TravelPalsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				360DE3772BC70EAD00430C84 /* Debug */,
+				360DE3782BC70EAD00430C84 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		360DE3792BC70EAD00430C84 /* Build configuration list for PBXNativeTarget "TravelPalsUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				360DE37A2BC70EAD00430C84 /* Debug */,
+				360DE37B2BC70EAD00430C84 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 360DE3472BC70EAA00430C84 /* Project object */;
+}
