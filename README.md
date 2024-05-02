@@ -1,2 +1,9 @@
-# TravelPals-App
-TravelPals App Dissertation
+INSTRUCTIONS ON WHERE TO FIND CODE
+----------------------------------
+FOR THE APP TRAVELPALS:
+
+
+FOR THE TRAVELPALS API:
+
+
+FOR FACE VERIFICATION CODE:
